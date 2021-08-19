@@ -76,7 +76,7 @@ selected by user when first prompt asks user will display on text bar.
 */
 
 for (var i=0; i < length; i++) {
-    result += passwordCharacters.charAt(Math.floor(Math.random() * passwordCharacters.length));
+    result += passwordCharacters(Math.floor(Math.random() * passwordCharacters.length));
 }
 return result;
 }
