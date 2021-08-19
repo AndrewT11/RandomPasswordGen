@@ -8,7 +8,7 @@ Random Password Generator
 Students will modify starter code to create an application that enables employees to generate random passwords based on criteria that they've selected.
 
 **Note** 
-
+You are important.
 
 ## Installation Instructions
 No installation necessary. 
@@ -44,12 +44,12 @@ THEN the password is either displayed in an alert or written to the page
 
 ## Links
 * [Deployed Website Link](https://andrewt11.github.io/RandomPasswordGen/)
-* [Code Repository Link](https://andrewt11.github.io/RandomPasswordGen/)
+* [Code Repository Link](https://github.com/AndrewT11/RandomPasswordGen)
 
 ## Credits
 Andrew Tran
 
-### Referenced Sources
+### Resources
 
 * https://www.w3schools.com/
 * https://developer.mozilla.org/en-US/
