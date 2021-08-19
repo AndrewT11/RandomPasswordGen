@@ -1,5 +1,6 @@
-// ***Student responsible code
-// Instructor Code
+// Instructor Code - no stars next to comment bars
+// Student Code - 3 stars next to comment bars
+
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -9,9 +10,9 @@ var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var number = "0123456789";
 var symbol = "~!@#$%^&*()<>[]{}-=_+";
-var passwordCharacters = ""; //This will be where all the types of characters that were ok'd will be stored.
+var passwordCharacters = ""; //This is where all the character types that were ok'd will be stored.
 
-// Write password to the #password output
+// Writes generated password to the #password output (placeholder)
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -46,7 +47,7 @@ var yesSpecial = confirm("Would you like special symbols in the password?");
 
 // ***Conditional selections. If user selects no character types, if statement true, alert for at least one character.
 if(!yesUpper&&!yesLower&&!yesNumber&&!yesSpecial){
-  alert("Passwords must be made with at least 1 type of character.");
+  alert("Passwords must be made with at least 1 character type.");
   return generatePassword();
 }
 
