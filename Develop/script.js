@@ -35,3 +35,23 @@ var yesSpecial = confirm("Would you like special symbols in the password?");
 if(!yesUpper&&!yesLower&&!yesNumber&&!yesSpecial){
   alert("Passwords must be made with at least 1 type of character.");
   return generatePassword();
+}
+// ***If OK is selected, each type of character list is added to passwordCharacters for results to pull from.
+if (yesUpper) {
+    passwordCharacters += upperCase;
+}
+if (yesLower) {
+    passwordCharacters += lowerCase;
+}
+if (number) {
+    passwordCharacters += number;
+}
+if (symbol) {
+    passwordCharacters += symbol;
+}
+
+for (var i=0; i < length; i++) {
+    result += passwordCharacters.charAt(Math.floor(Math.random() * passwordCharacters.length));
+}
+return result;
+}

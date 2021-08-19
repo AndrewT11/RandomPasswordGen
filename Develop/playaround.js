@@ -12,7 +12,7 @@ var passwordValue = "";
 
 // Create Password
 
-var createPassword = () => {
+var createPassword = function() {
     passwordValue = "";
 
     for (var i = 0; i < passwordLength; i++) {
@@ -36,3 +36,33 @@ var createPassword = () => {
 
 // Events
 button.addEventListener("click", createPassword);
+
+/* Random code figuring stuff out
+
+//generate password click event
+function (generatePassword) {
+  var length = +length.value;
+  var 
+}
+
+var choiceUpper = confirm("You want Uppercase letters?")
+  if (!choiceUpper) {
+    return;
+  }
+);
+var choiceLower = confirm("You want Lowercase letters?");
+ if (!choiceLower) {
+    return;
+  }
+var choiceNumber = confirm("You want numbers?");
+ if (!choiceNumber) {
+    return;
+  }
+var choiceSymbol = confirm("You want symbols?");
+ if (!choiceSymbol) {
+    return;
+  }
+
+*** w3collective.com help***
+
+*Setup var*
