@@ -75,23 +75,6 @@ Return calcuates result, which was an empty string. All random characters select
 selected by user when first prompt asks user will display on text bar.
 */
 
-function validatePassword() {
-  var p = document.getElementById('result').value,
-      errors = [];
-  if (p.search(/[A-Z]/) < 0) {
-      errors.push("Your password must contain at least one uppercase letter.")   
-  }
-  if (p.search(/[a-z]/i) < 0) {
-      errors.push("Your password must contain at least one letter.");
-  }
-  if (p.search(/[0-9]/) < 0) {
-      errors.push("Your password must contain at least one digit."); 
-  }
-  if (p.search(/[~!@#$%^&*()<>[]{}-=_+]/) < 0) {
-      errors.push("You password must have a symbol"); 
-  return generatePassword();
-  }
-}
 
 for (var i=0; i < length; i++) {
     result += passwordCharacters.charAt(Math.floor(Math.random() * passwordCharacters.length));
