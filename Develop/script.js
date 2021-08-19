@@ -12,6 +12,17 @@ var number = "0123456789";
 var symbol = "~!@#$%^&*()<>[]{}-=_+";
 var passwordCharacters = ""; //This is where all the character types that were ok'd will be stored.
 
+// Passowrd Verification
+// expression to search if passwordText has Uppercase
+yesUpper = passwordText.search(/[A-Z]/) > 0); // Will set expression to true if there's uppercase
+// Searching to see if any Uppercase
+do {
+//     **pw generation/iteration goes here**
+} while (!hasUpper || !hasLower)
+
+
+
+
 // Writes generated password to the #password output (placeholder)
 function writePassword() {
   var password = generatePassword();
@@ -74,7 +85,6 @@ length to be.
 Return calcuates result, which was an empty string. All random characters selected at the amount
 selected by user when first prompt asks user will display on text bar.
 */
-
 
 for (var i=0; i < length; i++) {
     result += passwordCharacters.charAt(Math.floor(Math.random() * passwordCharacters.length));
