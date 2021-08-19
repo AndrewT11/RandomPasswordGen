@@ -19,6 +19,11 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+
+//declaring generatePassword function is called in writePassword Func, will return final password.
+function generatePassword() {
+  var result = "";
+  
 // ***Amount of characters in password    
 var length = prompt("How many characters would you like your password to be? (8-128 chracters)");
 if(length < 8 || length > 128){
@@ -54,4 +59,3 @@ for (var i=0; i < length; i++) {
     result += passwordCharacters.charAt(Math.floor(Math.random() * passwordCharacters.length));
 }
 return result;
-}
