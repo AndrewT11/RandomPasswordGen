@@ -8,7 +8,11 @@ Random Password Generator
 Students will modify starter code to create an application that enables employees to generate random passwords based on criteria that they've selected.
 
 **Note** 
-
+No installation necessary. 
+1) Click on live page.
+2) Push Generate Password button.
+3) Answer the prompts given.
+4) Random generated password comes out. 100% easy.
 
 ## Installation Instructions
 
@@ -34,7 +38,7 @@ THEN the password is either displayed in an alert or written to the page
 
 
 ## Screenshot
-
+![Generator Example](Develop\randomgenexample.gif)
 
 
 ## Links
