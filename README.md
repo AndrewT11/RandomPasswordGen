@@ -51,12 +51,13 @@ Andrew Tran
 
 ### Referenced Sources
 
-* https://www.w3schools.com/css/
+* https://www.w3schools.com/
 * https://developer.mozilla.org/en-US/
-* https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties
 * https://choosealicense.com/
-* https://yoksel.github.io/flex-cheatsheet/
-* 
+* https://www.youtube.com/watch?v=duNmhKgtcsI&t=830s
+* https://www.youtube.com/watch?v=-Dog-Wd_RLw&t=611s
+* https://www.youtube.com/watch?v=1Rq_LrpcgIM
+
 
 ### License
 Copyright (c) [2021] [Andrew Tran]
