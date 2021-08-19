@@ -8,7 +8,7 @@ var number = "0123456789";
 var symbol = "~!@#$%^&*()<>[]{}-=_+";
 var passwordCharacters = ""; //This will be where all the types of characters that were ok'd will be stored.
 
-// Write password to the #password input
+// Write password to the #password output
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
