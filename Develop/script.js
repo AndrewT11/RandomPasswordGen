@@ -24,12 +24,14 @@ var length = prompt("How many characters would you like your password to be? (8-
 if(length < 8 || length > 128){
     alert("You must choose 8-128 characters.");
     return generatePassword();
-
+}
 // ***Asking character types (will save a true/false boolean for the variable, which is used to add the style of character you wanted to the generator)
 var yesUpper = confirm("Would you like upper case letters in the password?");
 var yesLower = confirm("Would you like lower case letters in the password?");
 var yesNumber = confirm("Would you like numbers in the password?");
 var yesSpecial = confirm("Would you like special symbols in the password?");
 
-
-
+// ***Conditional selections
+if(!yesUpper&&!yesLower&&!yesNumber&&!yesSpecial){
+  alert("Passwords must be made with at least 1 type of character.");
+  return generatePassword();
