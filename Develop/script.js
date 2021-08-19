@@ -27,7 +27,7 @@ generateBtn.addEventListener("click", writePassword);
 //declaring generatePassword function is called in writePassword Func, will return final password.
 function generatePassword() {
   var result = "";
-
+}
 // ***Amount of characters in password is set here. alert when if statement true.    
 var length = prompt("How many characters would you like your password to be? (8-128 chracters)");
 if(length < 8 || length > 128){
@@ -79,5 +79,22 @@ for (var i=0; i < length; i++) {
     result += passwordCharacters.charAt(Math.floor(Math.random() * passwordCharacters.length));
 }
 return result;
-}
 
+
+function validatePassword() {
+  var p = document.getElementById('result').value,
+      errors = [];
+  if (p.search(/[A-Z]/) < 0) {
+      errors.push("Your password must contain at least one uppercase letter.")   
+  }
+  if (p.search(/[a-z]/i) < 0) {
+      errors.push("Your password must contain at least one letter.");
+  }
+  if (p.search(/[0-9]/) < 0) {
+      errors.push("Your password must contain at least one digit."); 
+  }
+  if (p.search(/[~!@#$%^&*()<>[]{}-=_+]/) < 0) {
+      errors.push("You password must have a symbol"); 
+  return True;
+  }
+}
