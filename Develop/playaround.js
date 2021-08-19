@@ -7,7 +7,7 @@ var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var number = "0123456789";
 var symbol = "~!@#$%^&*()";
-var passwordLength = NULL;
+var passwordLength = ;
 var passwordValue = "";
 
 // Create Password

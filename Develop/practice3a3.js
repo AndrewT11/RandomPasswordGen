@@ -12,8 +12,9 @@ var passwordCharacters = ""; //This will be where all the types of characters th
 function writePassword() {
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
+    
     passwordText.value = password;
-    }
+}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
