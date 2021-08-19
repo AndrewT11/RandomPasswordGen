@@ -35,7 +35,7 @@ if(length < 8 || length > 128){
 }
 
 if (isNaN(length)) {
-      prompt("Please enter number's only.", "");
+      alert("Please enter number's only.");
       return generatePassword();
 }
 // ***Asking character types (will save a true/false boolean for the variable, which is used to add the style of character you wanted to the generator)
