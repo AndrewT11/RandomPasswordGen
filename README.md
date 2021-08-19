@@ -38,7 +38,7 @@ THEN the password is either displayed in an alert or written to the page
 
 
 ## Screenshot
-![Generator Example](Develop\randomgenexample.gif)
+![RandomPasswordGenerator](Develop\randomgenexample.gif)
 
 
 ## Links
