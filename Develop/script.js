@@ -12,17 +12,6 @@ var number = "0123456789";
 var symbol = "~!@#$%^&*()<>[]{}-=_+";
 var passwordCharacters = ""; //This is where all the character types that were ok'd will be stored.
 
-// Passowrd Verification
-// expression to search if passwordText has Uppercase
-yesUpper = passwordText.search(/[A-Z]/) > 0); // Will set expression to true if there's uppercase
-// Searching to see if any Uppercase
-do {
-//     **pw generation/iteration goes here**
-} while (!hasUpper || !hasLower)
-
-
-
-
 // Writes generated password to the #password output (placeholder)
 function writePassword() {
   var password = generatePassword();
