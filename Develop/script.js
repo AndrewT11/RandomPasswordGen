@@ -33,6 +33,11 @@ if(length < 8 || length > 128){
     alert("You must choose 8-128 characters.");
     return generatePassword();
 }
+
+if (isNaN(length)) {
+      prompt("Please enter number's only.", "");
+      return generatePassword();
+}
 // ***Asking character types (will save a true/false boolean for the variable, which is used to add the style of character you wanted to the generator)
 var yesUpper = confirm("Would you like upper case letters in the password?");
 var yesLower = confirm("Would you like lower case letters in the password?");
