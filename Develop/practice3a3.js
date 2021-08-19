@@ -1,7 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-//Assigning variables
+// ***Assigning variables
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var number = "0123456789";
@@ -23,25 +23,25 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
     var result = "";
 
-// Amount of characters in password    
+// ***Amount of characters in password    
     var length = prompt("How many characters would you like your password to be? (8-128 chracters)");
     if(length < 8 || length > 128){
         alert("You must choose 8-128 characters.");
         return generatePassword();
     }
-//Asking character types
+// ***Asking character types (will save a true/false boolean for the variable, which is used to add the style of character you wanted to the generator)
     var yesUpper = confirm("Would you like upper case letters in the password?");
     var yesLower = confirm("Would you like lower case letters in the password?");
     var yesNumber = confirm("Would you like numbers in the password?");
     var yesSpecial = confirm("Would you like special symbols in the password?");
 
-//Conditional selections
+// ***Conditional selections
     if(!yesUpper&&!yesLower&&!yesNumber&&!yesSpecial){
         alert("Passwords must be made with at least 1 type of character.");
         return generatePassword();
     }
 
-//If OK is selected, each type of character list is added to passwordCharacters for generatePassword to pull from.
+// ***If OK is selected, each type of character list is added to passwordCharacters for results to pull from.
     if (yesUpper) {
         passwordCharacters += upperCase;
     }
