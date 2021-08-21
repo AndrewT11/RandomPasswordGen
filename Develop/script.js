@@ -35,7 +35,7 @@ if(length < 8 || length > 128){
     return generatePassword();
 }
 
-//check if length is numbers only.
+// ***check if length is numbers only.
 if (isNaN(length)) {
       alert("Please enter number's only.");
       return generatePassword();
