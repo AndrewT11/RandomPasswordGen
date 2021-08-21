@@ -48,7 +48,7 @@ var yesSpecial = confirm("Would you like special symbols in the password?");
 
 // ***Conditional selections. If user selects no character types, if statement true, alert for at least one character.
 if(!yesUpper&&!yesLower&&!yesNumber&&!yesSpecial){
-  alert("Passwords must be made with at least 1 character type.");
+  alert("Password must contain 1 or more character types.");
   return generatePassword();
 }
 
