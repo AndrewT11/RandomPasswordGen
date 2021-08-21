@@ -68,9 +68,11 @@ if (symbol) {
 
 /* 
 For loop. result is empty string ready to be filled. loop adds character types into loop. 
- math.random = random number 0-1. Math.floor will round down. Multipled by the length of the selected 
-lenght from generatebtn click. Gives random character selected as many times as user selected password 
-length to be.
+ math.random = random number 0-1. Math.floor will round down. passwordCharacters is a container holding
+ all of the user selected character library. Example. 75 total is amount of characters in passwordCharacters.
+ passwordCharacters.length will be the number, 75. This is multipled by Math.random(a random number between 0 and 1).
+ Whatever number is outputted will be rounded down to the nearest whole number. (0.45 to 0). This will be the character
+ selected in passwordCharacters library. In this case, A.
 
 Return calcuates result, which was an empty string. All random characters selected at the amount
 selected by user when first prompt asks user will display on text bar.
